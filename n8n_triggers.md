@@ -18,7 +18,9 @@ In this page, we will cover:
 1.  **The lightning bolt icon ⚡:** Most trigger nodes feature this icon, symbolizing their role in initiating the workflow.
 2.  **Rouded left edge:** Unlike action nodes which have an input on their left hand side to receive data from preceding nodes, trigger nodes possess a smooth, rounded left edge. This signifies that they are the origin point of a workflow.
 
-<center><img src= image-1.png width="200"></center> 
+<p align = "center">
+<img src= image-1.png width="200">
+</p>
 
 ## Adding and configuring triggers
 
@@ -36,7 +38,9 @@ Incorporating a trigger into your workflow is straightforward:
     * To re-configure a trigger's settings you can double-click it to open its settings page. 
     * To run, activate/deactivate, copy, duplicate, delete or otherwise manage a trigger, you can click the icons above it or click the `...` to open the trigger's menu.
 
-    <center><img src = image-3.png width = "250"><center>
+    <p align = "center">
+    <img src = image-3.png width = "250">
+    </p>
 
 ### Configuring multiple triggers
 
@@ -120,7 +124,9 @@ To test a workflow with a webhook or event-based trigger, you can double-click t
 
 The test data will then proceed through your workflow, and the output of each node is displayed. Use manual testing to check your setup, configuration, and for debugging.
 
-<center><img src = image-4.png width = "450"></center>
+<p align = "center">
+<img src = image-4.png width = "450">
+</p>
 
 ### Activating your workflow
 Once development and testing are complete, **activate** your workflow using the toggle switch at the top of the canvas. Your workflow is actively listening for real-world events based on its trigger configuration and should run when its trigger conditions are met.
@@ -128,7 +134,9 @@ Once development and testing are complete, **activate** your workflow using the 
 Unlike manual tests, live workflow execution data and logs are not displayed directly on the canvas. To review them:
 - Navigate to the `Executions` tab (next to the `Editor` tab) to view the history of all runs. Test executions are often marked with a test tube icon.
 
-<center><img src = image-5.png width = "450"></center>
+<p align="center">
+<img src = image-5.png width = "550">
+</p>
 
 ## Frequently asked questions
 
