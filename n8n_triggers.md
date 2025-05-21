@@ -3,15 +3,15 @@
 When creating an automated workflow with n8n, a trigger node is your first building block. Think of a trigger node as the **initiator of your workflow** – it listens for specific events or conditions. When that event occurs, the trigger activates your workflow, supplying the initial data required for your automation.
 
 In this page, we will cover:
-- [Key features of a trigger node]()
-- [Adding and configuring triggers]()
-    - [Configuring multiple triggers]()
-- [Types of triggers]()
-- [Testing vs activating a trigger]()
-    - [Testing]()
-    - [Activating]()
-- [Frequently asked questions]()
-- [Additional resources]()
+- [Key features of a trigger node](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#key-features-of-a-trigger-node)
+- [Adding and configuring triggers](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#key-features-of-a-trigger-node)
+    - [Configuring multiple triggers](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#configuring-multiple-triggers)
+- [Types of triggers](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#types-of-triggers)
+- [Testing vs activating a trigger](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#configuring-multiple-triggers)
+    - [Testing](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#testing-your-trigger)
+    - [Activating](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#activating-your-trigger)
+- [Frequently asked questions](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#frequently-asked-questions)
+- [Additional resources](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#where-to-go-next)
 
 ## Key features of a trigger node
 
@@ -19,7 +19,7 @@ In this page, we will cover:
 2.  **Rouded left edge:** Unlike action nodes which have an input on their left hand side to receive data from preceding nodes, trigger nodes possess a smooth, rounded left edge. This signifies that they are the origin point of a workflow.
 
 <p align = "center">
-<img src= image-1.png width="200">
+<img src= webhook_trigger.png width="200">
 </p>
 
 ## Adding and configuring triggers
@@ -39,7 +39,7 @@ Incorporating a trigger into your workflow is straightforward:
     * To run, activate/deactivate, copy, duplicate, delete or otherwise manage a trigger, you can click the icons above it or click the `...` to open the trigger's menu.
 
     <p align = "center">
-    <img src = image-3.png width = "250">
+    <img src = trigger_ellipsis_menu.png width = "250">
     </p>
 
 ### Configuring multiple triggers
@@ -51,7 +51,7 @@ A single workflow can be initiated by multiple, distinct triggers. For instance,
 > [!NOTE] 
 > Each trigger is independent and triggers independent workflows. When `Trigger A` executes, it initiates one complete, self-contained run of the workflow using the data it received or generated. If `Trigger B` executes at a different time (or even concurrently), it starts an entirely new and separate run of the same workflow with its own specific data. 
 
-## How workflows are triggered
+## Types of triggers
 
 To power your automations, n8n provides an extensive suite of trigger nodes. These triggers operate via a few core mechanisms, which are categorized by their grouping within the n8n application:
 
@@ -117,25 +117,27 @@ This category serves as a collection point for more specialized trigger types th
 
 ## Testing vs activating triggers
 
-### Testing 
-Use the `Test workflow` button (at the bottom of the canvas) or the individual play icon ▶️ on a node (including the trigger node) for manual execution.
+### Testing your trigger
+Use the `Test workflow` button (at the bottom of the canvas) or the individual play icon ▶️ on the trigger node for manual execution.
 
-To test a workflow with a webhook or event-based trigger, you can double-click the trigger node and in the parameters page click `Listen for Test Event` or `Fetch Sample Data` to capture a sample event or fetch recent data to use for testing.
+To test a workflow with a webhook or an event-based trigger, you can double-click the trigger node and in the parameters page click `Listen for Test Event` or `Fetch Sample Data` to capture a sample event or fetch recent data to use for testing. You can then test the workflow.
 
-The test data will then proceed through your workflow, and the output of each node is displayed. Use manual testing to check your setup, configuration, and for debugging.
+During the test, sample data proceeds through your workflow, and the output of each node is displayed. Use manual testing to check your setup, configuration, and for debugging.
 
 <p align = "center">
-<img src = image-4.png width = "450">
+<img src = test_workflow.png width = "450">
 </p>
 
-### Activating your workflow
-Once development and testing are complete, **activate** your workflow using the toggle switch at the top of the canvas. Your workflow is actively listening for real-world events based on its trigger configuration and should run when its trigger conditions are met.
+### Activating your trigger
+Once development and testing are complete, **activate** your workflow using the toggle switch at the top of the canvas. Your workflow is now actively listening for real-world events based on its trigger configuration and should run when its trigger conditions are met.
+
+Perform the action that you believe will trigger your workflow and wait for the workflow to execute.  
 
 Unlike manual tests, live workflow execution data and logs are not displayed directly on the canvas. To review them:
-- Navigate to the `Executions` tab (next to the `Editor` tab) to view the history of all runs. Test executions are often marked with a test tube icon.
+- Navigate to the `Executions` tab (next to the `Editor` tab) to view the history of all runs. Test executions are marked with a test tube icon, live executions have no associated icon. 
 
 <p align="center">
-<img src = image-5.png width = "550">
+<img src = active_workflow.png width = "550">
 </p>
 
 ## Frequently asked questions
