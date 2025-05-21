@@ -19,7 +19,7 @@ In this page, we will cover:
 2.  **Rouded left edge:** Unlike action nodes which have an input on their left hand side to receive data from preceding nodes, trigger nodes possess a smooth, rounded left edge. This signifies that they are the origin point of a workflow.
 
 <p align = "center">
-<img src= webhook_trigger.png width="200">
+<img src= images/webhook_trigger.png width="200">
 </p>
 
 ## Adding and configuring triggers
@@ -39,7 +39,7 @@ Incorporating a trigger into your workflow is straightforward:
     * To run, activate/deactivate, copy, duplicate, delete or otherwise manage a trigger, you can click the icons above it or click the `...` to open the trigger's menu.
 
     <p align = "center">
-    <img src = trigger_ellipsis_menu.png width = "250">
+    <img src = images/trigger_ellipsis_menu.png width = "250">
     </p>
 
 ### Configuring multiple triggers
@@ -125,7 +125,7 @@ To test a workflow with a webhook or an event-based trigger, you can double-clic
 During the test, sample data proceeds through your workflow, and the output of each node is displayed. Use manual testing to check your setup, configuration, and for debugging.
 
 <p align = "center">
-<img src = test_workflow.png width = "650">
+<img src = images/test_workflow.png width = "650">
 </p>
 
 ### Activating your trigger
@@ -137,7 +137,7 @@ Unlike manual tests, live workflow execution data and logs are not displayed dir
 - Navigate to the `Executions` tab (next to the `Editor` tab) to view the history of all runs. Test executions are marked with a test tube icon, live executions have no associated icon. 
 
 <p align="center">
-<img src = active_workflow.png width = "650">
+<img src = images/active_workflow.png width = "650">
 </p>
 
 ## Frequently asked questions
