@@ -7,7 +7,7 @@ In this page, we will cover:
 - [Adding and configuring triggers](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#key-features-of-a-trigger-node)
     - [Configuring multiple triggers](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#configuring-multiple-triggers)
 - [Types of triggers](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#types-of-triggers)
-- [Testing vs activating a trigger](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#configuring-multiple-triggers)
+- [Testing vs activating a trigger](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#testing-vs-activating-triggers)
     - [Testing](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#testing-your-trigger)
     - [Activating](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#activating-your-trigger)
 - [Frequently asked questions](https://github.com/AtiqKhan95/n8n_triggers_docs/blob/main/n8n_triggers.md#frequently-asked-questions)
@@ -125,7 +125,7 @@ To test a workflow with a webhook or an event-based trigger, you can double-clic
 During the test, sample data proceeds through your workflow, and the output of each node is displayed. Use manual testing to check your setup, configuration, and for debugging.
 
 <p align = "center">
-<img src = test_workflow.png width = "450">
+<img src = test_workflow.png width = "650">
 </p>
 
 ### Activating your trigger
@@ -137,7 +137,7 @@ Unlike manual tests, live workflow execution data and logs are not displayed dir
 - Navigate to the `Executions` tab (next to the `Editor` tab) to view the history of all runs. Test executions are marked with a test tube icon, live executions have no associated icon. 
 
 <p align="center">
-<img src = active_workflow.png width = "550">
+<img src = active_workflow.png width = "650">
 </p>
 
 ## Frequently asked questions
